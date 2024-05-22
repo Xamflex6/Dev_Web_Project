@@ -1,0 +1,284 @@
+@font-face {
+    font-family: "BeaufortforLOL";
+    src: url(/fonts/BeaufortforLOL-Regular.ttf);
+}
+
+@font-face {
+    font-family: "BeaufortforLOL Bold";
+    src: url(/fonts/BeaufortforLOL-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "BeaufortforLOL";
+  font-size: 1.1rem;
+}
+
+body{
+    background: #010a13;
+}
+
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    padding-right: 0.5rem;
+}
+
+.presentation{
+    background-size: cover;
+    background-position: 65%;
+}
+
+.image-index{
+    background-image: url("/img/wallpapers/TFT_Set4_KeyArtV2.jpg");
+}
+
+.image-description{
+    background-image: url("/img/wallpapers/TFT_Set7_Champs_TraitsThumb.jpg");
+}
+
+.image-equipes{
+    background-image: url("/img/wallpapers/penguin-tft-teamfight-tactics-hd-wallpaper-1920x1080-uhdpaper.com-743.1_a.jpg");
+}
+
+.image-infosperso{
+    background-image: url("/img/wallpapers/fond\ infos\ persos.jpg")
+}
+
+header {
+    background-color: #010a13;
+    text-align: center;
+}
+
+header a{
+    transition: .5s ease-in-out all;
+}
+
+header a:hover, header a:active {
+    transform: scale(1.1);
+    border-radius: 12px;   
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+#navtop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+
+#navtopright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-radius: 20px;
+}
+
+#navtop a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(156 163 175);
+    margin: 5px;
+    padding: 4px;
+    border-radius: 12px;
+    transition: .5s ease-in-out all;
+}
+
+#navtopright img{
+    padding: 6px;
+    justify-content: stretch;
+}
+
+#logo {
+    padding: 10px;
+    height: 50px;
+    margin: 0 10px 0 0;
+}
+
+.presentation {
+    text-align: center;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+.top-container{
+    background-color: rgba(1, 10, 19, 0.75);
+    padding: 40px;
+    color: rgb(209 213 219);
+    height: 100vh;
+}
+
+.title{
+    padding-bottom: 20px;
+    font-size: 36px;
+    color: #c89b3c;
+    font-weight: 700;
+    font-family: "BeaufortforLOL Bold";
+}
+
+.title2{
+    padding-bottom: 20px;
+    font-size: 36px;
+    color: #e6c06e;
+    font-weight: 700;
+    font-family: "BeaufortforLOL Bold";
+}
+.subtitle{
+    color: #c89b3c;
+    font-family: "BeaufortforLOL Bold";
+}
+
+.grid-parent{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+}
+
+.grid-elem{
+    display: flex;
+    background-color: #010a13;
+    border: #c89b3c 2.5px solid;
+    width: auto;
+    padding: 12px;
+    min-height: 100px;
+    border-radius: 8px;
+    transition: .5s ease-in-out all;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.grid-elem img{
+    min-width: 50px;
+}
+
+.grid-elem ul{
+    text-align: start;
+    padding: 20px;
+}
+
+.grid-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 12.5px;
+    margin-bottom: 12.5px;
+    border-bottom: #c89b3c 1px solid;
+    gap: 6px;
+}
+
+.grid-head span{
+    font-size: 24px;
+}
+
+
+
+.grid-elem:hover{
+    box-shadow: 1px 1px 125px 1px rgba(200,155,60,0.5);
+}
+
+.persos-tft{
+    margin-top: 15px;
+}
+
+.rules{
+    padding: 24px;
+    margin-top: 80px;
+    background-color: rgba(1, 10, 19, 0.365); 
+    justify-content: start;
+    text-align: start;    
+}
+
+.map{
+    background-color: rgba(1, 10, 19, 0.365); 
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap : 12px;
+    margin-top: 40px;
+}
+
+.map-desc{
+    text-align: start;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.map-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+
+
+
+@media screen and (min-width: 720px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #navtop {
+        display: flex;
+        flex-direction: row;
+    }
+    header a {
+        display: flex;
+        align-items: center;
+    }
+
+    header{
+        padding: 0 22px 0 22px;
+    }
+    .grid-parent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .grid-parent{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .map{
+        flex-direction: row;
+    }
+    .map-img{
+        width: 33%;
+        height: auto;
+    }
+    .map-desc{
+        width: 66%;
+    }
+}
+
+
+
+  
+  
+ 
+
+
+    
